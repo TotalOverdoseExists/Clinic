@@ -1,9 +1,19 @@
 :root {
   --mainColor: #4babda;
-  --subColor: #369626;
+	--subColor: #369626;
+	--mainTextColor: #000;
+	--subTextColor: #fff;
 }
 body {
   font-family: 'Exo 2', sans-serif;
   font-size: 15px;
   line-height: 24px;
+}
+
+/*Modules*/
+.m-logo {
+	max-width: 100%;
+}
+.m-mainMenu {
+	padding: 0 15px;
 }
