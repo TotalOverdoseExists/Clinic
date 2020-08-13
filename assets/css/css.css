@@ -1,19 +1,201 @@
+/*Base*/
 :root {
-  --mainColor: #4babda;
-	--subColor: #369626;
+  --mainColor: #0991cb;
+	--subColor: #58a74d;
+	--subColorHover: #28791a;
 	--mainTextColor: #000;
 	--subTextColor: #fff;
+	--bgColor: #f8f8f8;
+	--bgBorderColor: #b8cbe2;
+	--thirdColor: #d41676;
 }
 body {
   font-family: 'Exo 2', sans-serif;
   font-size: 15px;
   line-height: 24px;
 }
-
-/*Modules*/
-.m-logo {
+section {
+	padding: 30px 0;
+}
+a {
+	text-decoration: none;
+	color: var(--mainColor);
+}
+h1 {
+	font-size: 39px;
+	line-height: 48px;
+	margin-bottom: 15px;
+}
+h2 {
+	font-size: 33px;
+	line-height: 36px;
+	margin-bottom: 15px;
+}
+p {
+	margin-bottom: 15px;
+}
+ul {
+	margin-bottom: 15px;
+	padding-left: 20px;
+	list-style-type: disc;
+}
+b {
+	font-weight: bold;
+}
+button {
+	display: block;
+	padding: 15px 25px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .1);
+	background: var(--subColor);
+	color: var(--subTextColor);
+	font-family: 'Exo 2', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: .3s;
+}
+button:hover {
+	background: var(--subColorHover);
+}
+img {
 	max-width: 100%;
 }
-.m-mainMenu {
+
+/*Layouts*/
+#header {
+	padding: 20px 0;
+	font-size: 16px;
+	text-align: center;
+}
+#header span {
+	display: inline-block;
+}
+#topNav {
+	background: var(--mainColor);
+	padding: 15px 0;
+}
+#topNav a {
 	padding: 0 15px;
+	color: var(--subTextColor);
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#topNav a:hover {
+	background: rgba(0, 0, 0, .05);
+}
+
+/*Modules*/
+.m-phoneLink {
+	font-size: 23px;
+	font-weight: bold;
+	color: var(--mainTextColor);
+}
+.m-callbackButton {
+	margin-left: auto;
+}
+.m-mainBanner {
+	background: url(../img/banner.jpg) no-repeat center center;
+}
+.m-mainBanner .row {
+	height: 50vh;
+	align-items: center;
+}
+.m-mainBanner svg {
+	margin-bottom: -37px;
+}
+.m-pricesPreview h3 {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	color: var(--thirdColor);
+	margin-bottom: 15px;
+}
+.m-pricesPreview li {
+	background: var(--bgColor);
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid var(--bgBorderColor);
+	font-size: 20px;
+	font-weight: bold;
+}
+.m-pricesPreview li span:nth-child(1) {
+	color: var(--subColor);
+}
+.m-pricesPreview li span:nth-child(2) {
+	color: var(--thirdColor);
+}
+.m-pricesPreview button {
+	margin: 25px auto 0;
+}
+.m-mainAbout {
+	background: var(--bgColor);
+}
+.m-mainForm {
+	background: var(--bgColor);
+}
+.m-mainAdvantages {
+	background: var(--bgColor);
+	text-align: center;
+}
+.m-mainAdvantages img {
+	margin-bottom: 25px;
+	display: block;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	margin: auto;
+}
+.m-mainAdvantages h3 {
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+	color: var(--mainTextColor);
+}
+.m-mainAdvantages span {
+	font-size: 17px;
+}
+.m-mainServices {
+	background: var(--bgColor);
+}
+.m-mainGallery {
+	background: var(--bgColor);
+}
+.m-mainGallery img {
+	margin: 15px 0;
+}
+.m-mainSpecialists {
+	background: var(--bgColor);
+}
+.m-fullWidthSlider {
+	padding: 15px 0;
+	text-align: center;
+	overflow: hidden;
+}
+.m-fullWidthSlider > .row {
+	flex-wrap: nowrap;
+	transition: .5s;
+}
+.m-fullWidthSlider img {
+	border-radius: 50%;
+}
+.m-fullWidthSlider a:hover img {
+	transform: scale(1.05);
+	transition: .5s;
+}
+.m-fullWidthSlider h3 {
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.m-fullWidthSlider span {
+	font-size: 18px;
+	color: var(--mainTextColor);
+}
+.m-mainBlog span {
+	
 }

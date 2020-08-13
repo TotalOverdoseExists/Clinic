@@ -7,42 +7,47 @@
 	<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;400;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="./assets/css/css.css">
+	<link rel="stylesheet" href="./assets/css/css.css">
+	<script src="https://kit.fontawesome.com/c965cbb559.js" crossorigin="anonymous"></script>
   <script src="./assets/js/js.js"></script>
 </head>
 <body>
 	<!--Header-->
-  <header id="header" class="container">
-    <div class="row align-items-center">
-      <div class="col-12 col-xl-3">
-        <img class="m-logo" src="./assets/img/logo.png" alt="logo">
-      </div>
-      <div class="d-none d-xl-block col-xl-3">
-				<span><b>г. Москва, м. Октябрьское Поле</b></span>
-				<span>Маршала Вершинина, 8 к.1</span>
+  <header id="header">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-12 col-xl-3">
+					<img src="./assets/img/logo.png" alt="logo">
+				</div>
+				<div class="d-none d-xl-block col-xl-3">
+					<span><b>г. Москва, м. Октябрьское Поле</b></span>
+					<span>Маршала Вершинина, 8 к.1</span>
+				</div>
+				<div class="d-none d-xl-block col-xl-3">
+					<a class="m-phoneLink" href="tel:+74951502818">+7 (495) 150 28 18</a>
+					<span>Ежедневно: 10:00-21:00</span>
+				</div>
+				<div class="d-none d-xl-block col-xl-3">
+					<button class="m-callbackButton js-openPopup"><i class="fas fa-phone-alt"></i> Обратный звонок</button>
+				</div>
 			</div>
-      <div class="d-none d-xl-block col-xl-3">
-				<a class="m-phoneLink" href="tel:+74951502818">+7 (495) 150 28 18</a>
-				<span>Ежедневно: 10:00-21:00</span>
-			</div>
-      <div class="d-none d-xl-block col-xl-3">
-				<button class="m-callbackButton js-openPopup">Обратный звонок</button>
-			</div>
-    </div>
+		</div>
 	</header>
 	<!--/Header-->
 	<!--Nav-->
-  <nav id="topNav" class="container">
-		<div class="row justify-content-between">
-			<a class="m-mainMenu" href="./about.html">О клинике</a>
-			<a class="m-mainMenu" href="./services.html">Услуги</a>
-			<a class="m-mainMenu" href="./prices.html">Цены</a>
-			<a class="m-mainMenu" href="./stock.html">Акции</a>
-			<a class="m-mainMenu" href="./works.html">Наши работы</a>
-			<a class="m-mainMenu" href="./specialists.html">Врачи</a>
-			<a class="m-mainMenu" href="./blog.html">Статьи</a>
-			<a class="m-mainMenu" href="./reviews.html">Отзывы</a>
-			<a class="m-mainMenu" href="./contacts.html">Контакты</a>
+  <nav id="topNav">
+		<div class="container">
+			<div class="row justify-content-between">
+				<a href="./about.html">О клинике</a>
+				<a href="./services.html">Услуги</a>
+				<a href="./prices.html">Цены</a>
+				<a href="./stock.html">Акции</a>
+				<a href="./works.html">Наши работы</a>
+				<a href="./specialists.html">Врачи</a>
+				<a href="./blog.html">Статьи</a>
+				<a href="./reviews.html">Отзывы</a>
+				<a href="./contacts.html">Контакты</a>
+			</div>
 		</div>
 	</nav>
 	<!--/Nav-->
@@ -53,37 +58,40 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-xl-4 offset-xl-8">
-						<h3>Наши цены</h3>
-						<ul>
-							<li>
-								<span>Пломба световая</span>
-								<span>3 200 р.</span>
-							</li>
-							<li>
-								<span>Металлокерамика</span>
-								<span>4 950 р.</span>
-							</li>
-							<li>
-								<span>Удаление зуба</span>
-								<span>от 800 р.</span>
-							</li>
-							<li>
-								<span>Проф. гигиена</span>
-								<span>3 500 р.</span>
-							</li>
-							<li>
-								<span>Имплантация</span>
-								<span>18 500 р.</span>
-							</li>
-							<li>
-								<span>Диоксид циркония</span>
-								<span>12 800 р.</span>
-							</li>
-							<button>Посмотреть все цены</button>
-						</ul>
+						<div class="m-pricesPreview">
+							<h3>Наши цены</h3>
+							<ul>
+								<li>
+									<span><i class="fas fa-check"></i> Пломба световая</span>
+									<span>3 200 р.</span>
+								</li>
+								<li>
+									<span><i class="fas fa-check"></i> Металлокерамика</span>
+									<span>4 950 р.</span>
+								</li>
+								<li>
+									<span><i class="fas fa-check"></i> Удаление зуба</span>
+									<span>от 800 р.</span>
+								</li>
+								<li>
+									<span><i class="fas fa-check"></i> Проф. гигиена</span>
+									<span>3 500 р.</span>
+								</li>
+								<li>
+									<span><i class="fas fa-check"></i> Имплантация</span>
+									<span>18 500 р.</span>
+								</li>
+								<li>
+									<span><i class="fas fa-check"></i> Диоксид циркония</span>
+									<span>12 800 р.</span>
+								</li>
+							</ul>
+							<button data-link="./prices.html">Посмотреть все цены</button>
+						</div>
 					</div>
 				</div>
 			</div>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 36"> <polygon fill="#f8f8f8" points="755,0 719.999,35 685,0 0,0 0,36 1440,36 1440,0 "></polygon></svg>
 		</section>
 		<!--/Mainpage banner-->
 		<!--Mainpage about-->
@@ -141,7 +149,7 @@
 		</section>
 		<!--/Mainpage advantages-->
 		<!--Form-->
-		<section class="m-form"></section>
+		<section class="m-mainForm"></section>
 		<!--/Form-->
 		<!--Mainpage services-->
 		<section class="m-mainServices">
@@ -295,7 +303,47 @@
 	</main>
 	<!--/Main-->
 	<!--Footer-->
-	<footer id="footer"></footer>
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-4">
+					<img class="m-logo" src="./assets/img/logoFooter.png" alt="logo">
+					<span>Лицензия на осуществление медицинской деятельности ЛО-77-01-015671</span>
+				</div>
+				<div class="col-12 col-lg-4"></div>
+				<div class="col-12 col-lg-4">
+					<span><b>г. Москва, метро Октябрьское Поле</b></span>
+					<span>Маршала Вершинина, 8 к.1</span>
+					<a class="m-phoneLink" href="tel:+74951502818">+7 (495) 150 28 18</a>
+					<span>Ежедневно: 10:00-21:00</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<span>Информация на данном сайте носит исключительно информационный характер, информационные материалы и цены, размещенные на сайте не являются публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса РФ</span>
+				</div>
+			</div>
+		</div>
+	</footer>
 	<!--/Footer-->
+	<!--Additional blocks-->
+	<!--To top button-->
+	<div id="m-toTop">
+		<i class="fas fa-angle-double-up"></i>
+	</div>
+	<!--/To top button-->
+	<!--Popup form-->
+	<div class="m-popupForm">
+		<form action="./" method="post">
+			<button>Закрыть</button>
+			<img src="./assets/img/logoMini.png" alt="logo">
+			<legend>Мы перезвоним Вам</legend>
+			<p>С удовольствием ответим на Ваши вопросы!</p>
+			<input type="tel">
+			<button type="submit">Отправить</button>
+		</form>
+	</div>
+	<!--/Popup form-->
+	<!--/Additional blocks-->
 </body>
 </html>
