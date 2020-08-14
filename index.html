@@ -28,7 +28,7 @@
 					<span>Ежедневно: 10:00-21:00</span>
 				</div>
 				<div class="d-none d-xl-block col-xl-3">
-					<button class="m-callbackButton js-openPopup"><i class="fas fa-phone-alt"></i> Обратный звонок</button>
+					<button class="m-callbackButton" data-act="openPopup"><i class="fas fa-phone-alt"></i> Обратный звонок</button>
 				</div>
 			</div>
 		</div>
@@ -37,16 +37,49 @@
 	<!--Nav-->
   <nav id="topNav">
 		<div class="container">
-			<div class="row justify-content-between">
-				<a href="./about.html">О клинике</a>
-				<a href="./services.html">Услуги</a>
-				<a href="./prices.html">Цены</a>
-				<a href="./stock.html">Акции</a>
-				<a href="./works.html">Наши работы</a>
-				<a href="./specialists.html">Врачи</a>
-				<a href="./blog.html">Статьи</a>
-				<a href="./reviews.html">Отзывы</a>
-				<a href="./contacts.html">Контакты</a>
+			<div class="row">
+				<ul>
+					<li>
+						<a href="./about.html">О клинике</a>
+					</li>
+					<li>
+						<a href="./services.html">Услуги</a>
+						<ul>
+							<li>
+								<a href="./services.html"><i class="fas fa-arrow-right"></i>Диагностика</a>
+								<ul>
+									<li>
+										<a href="./services.html"><i class="fas fa-arrow-right"></i>Турбо диагностика</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="./services.html"><i class="fas fa-arrow-right"></i>Лечение</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="./prices.html">Цены</a>
+					</li>
+					<li>
+						<a href="./stock.html">Акции</a>
+					</li>
+					<li>
+						<a href="./works.html">Наши работы</a>
+					</li>
+					<li>
+						<a href="./specialists.html">Врачи</a>
+					</li>
+					<li>
+						<a href="./blog.html">Статьи</a>
+					</li>
+					<li>
+						<a href="./reviews.html">Отзывы</a>
+					</li>
+					<li>
+						<a href="./contacts.html">Контакты</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</nav>
@@ -187,23 +220,23 @@
 				</div>
 				<div class="row">
 					<div class="col-12 col-md-6">
-						<a href="./assets/img/galleryImg.jpg">
+						<a href="./assets/img/galleryImg.jpg" data-act="openGallery">
 							<img src="./assets/img/galleryImg.jpg" alt="galleryImg">
 						</a>
 					</div>
 					<div class="col-12 col-md-6">
-						<a href="./assets/img/galleryImg.jpg">
+						<a href="./assets/img/galleryPic.jpg" data-act="openGallery">
+							<img src="./assets/img/galleryPic.jpg" alt="galleryImg">
+						</a>
+					</div>
+					<div class="col-12 col-md-6">
+						<a href="./assets/img/galleryImg.jpg" data-act="openGallery">
 							<img src="./assets/img/galleryImg.jpg" alt="galleryImg">
 						</a>
 					</div>
 					<div class="col-12 col-md-6">
-						<a href="./assets/img/galleryImg.jpg">
-							<img src="./assets/img/galleryImg.jpg" alt="galleryImg">
-						</a>
-					</div>
-					<div class="col-12 col-md-6">
-						<a href="./assets/img/galleryImg.jpg">
-							<img src="./assets/img/galleryImg.jpg" alt="galleryImg">
+						<a href="./assets/img/galleryPic.jpg" data-act="openGallery">
+							<img src="./assets/img/galleryPic.jpg" alt="galleryImg">
 						</a>
 					</div>
 				</div>
@@ -275,26 +308,26 @@
 				<div class="row">
 					<div class="col-12 col-md-6 col-lg-4">
 						<span>11.08.2020</span>
-						<h3>Металлокерамические или циркониевые коронки - что выбрать?</h3>
+						<h3><a href="./blog.html">Металлокерамические или циркониевые коронки - что выбрать?</a></h3>
 						<p>Прочитайте статью и узнайте какие коронки лучше выбрать для лечения зубов. Подробный обзор металлокерамических и циркониевых коронок.</p>
 						<button>Читать дальше</button>
 					</div>
 					<div class="col-12 col-md-6 col-lg-4">
 						<span>11.08.2020</span>
-						<h3>Металлокерамические или циркониевые коронки - что выбрать?</h3>
+						<h3><a href="./blog.html">Металлокерамические или циркониевые коронки - что выбрать?</a></h3>
 						<p>Прочитайте статью и узнайте какие коронки лучше выбрать для лечения зубов. Подробный обзор металлокерамических и циркониевых коронок.</p>
 						<button>Читать дальше</button>
 					</div>
 					<div class="col-12 col-md-6 col-lg-4">
 						<span>11.08.2020</span>
-						<h3>Металлокерамические или циркониевые коронки - что выбрать?</h3>
+						<h3><a href="./blog.html">Металлокерамические или циркониевые коронки - что выбрать?</a></h3>
 						<p>Прочитайте статью и узнайте какие коронки лучше выбрать для лечения зубов. Подробный обзор металлокерамических и циркониевых коронок.</p>
 						<button>Читать дальше</button>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-12">
-						<a href="./blog.html">Читать все статьи</a>
+						<a class="m-allLink" href="./blog.html">Читать все статьи</a>
 					</div>
 				</div>
 			</div>
@@ -307,8 +340,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-lg-4">
-					<img class="m-logo" src="./assets/img/logoFooter.png" alt="logo">
-					<span>Лицензия на осуществление медицинской деятельности ЛО-77-01-015671</span>
+					<img src="./assets/img/logoFooter.png" alt="logo">
+					<span><small>Лицензия на осуществление медицинской деятельности ЛО-77-01-015671</small></span>
 				</div>
 				<div class="col-12 col-lg-4"></div>
 				<div class="col-12 col-lg-4">
@@ -316,11 +349,14 @@
 					<span>Маршала Вершинина, 8 к.1</span>
 					<a class="m-phoneLink" href="tel:+74951502818">+7 (495) 150 28 18</a>
 					<span>Ежедневно: 10:00-21:00</span>
+					<a href="https://a1-reklama.ru" target="_blank">
+						<img class="m-devLogo" src="./assets/img/logoa1.png" alt="Developer">
+					</a>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-12">
-					<span>Информация на данном сайте носит исключительно информационный характер, информационные материалы и цены, размещенные на сайте не являются публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса РФ</span>
+					<span class="m-offer"><small>Информация на данном сайте носит исключительно информационный характер, информационные материалы и цены, размещенные на сайте не являются публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса РФ</small></span>
 				</div>
 			</div>
 		</div>
@@ -328,22 +364,34 @@
 	<!--/Footer-->
 	<!--Additional blocks-->
 	<!--To top button-->
-	<div id="m-toTop">
+	<div id="toTop">
 		<i class="fas fa-angle-double-up"></i>
 	</div>
 	<!--/To top button-->
 	<!--Popup form-->
-	<div class="m-popupForm">
+	<div id="popupForm">
 		<form action="./" method="post">
-			<button>Закрыть</button>
+			<button data-act="closePopup">Закрыть</button>
 			<img src="./assets/img/logoMini.png" alt="logo">
 			<legend>Мы перезвоним Вам</legend>
 			<p>С удовольствием ответим на Ваши вопросы!</p>
-			<input type="tel">
-			<button type="submit">Отправить</button>
+			<div class="m-formBlock">
+				<input type="tel">
+				<button type="submit">Отправить</button>
+			</div>
 		</form>
 	</div>
 	<!--/Popup form-->
+	<!--Gallery-->
+	<div id="gallery">
+		<button data-act="closeGallery"><i class="fas fa-times"></i></button>
+		<img>
+		<div class="m-galleryControls">
+			<button data-act="prevPic"><i class="fas fa-chevron-left"></i></button>
+			<button data-act="nextPic"><i class="fas fa-chevron-right"></i></button>
+		</div>
+	</div>
+	<!--/Gallery-->
 	<!--/Additional blocks-->
 </body>
 </html>
