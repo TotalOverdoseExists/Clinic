@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinic</title>
+	<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="./assets/css/css.css">
+	<script src="https://kit.fontawesome.com/c965cbb559.js" crossorigin="anonymous"></script>
+  <script src="./assets/js/js.js"></script>
+</head>
+<body>
+	<!--Header-->
+  <header id="header">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-12 col-xl-3">
+					<a href="./">
+						<img src="./assets/img/logo.png" alt="logo">
+					</a>
+				</div>
+				<div class="d-none d-xl-block col-xl-3">
+					<span><b>г. Москва, м. Октябрьское Поле</b></span>
+					<span>Маршала Вершинина, 8 к.1</span>
+				</div>
+				<div class="d-none d-xl-block col-xl-3">
+					<a class="m-phoneLink" href="tel:+74951502818">+7 (495) 150 28 18</a>
+					<span>Ежедневно: 10:00-21:00</span>
+				</div>
+				<div class="d-none d-xl-block col-xl-3">
+					<button class="m-callbackButton" data-act="openPopup"><i class="fas fa-phone-alt"></i> Обратный звонок</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--/Header-->
+	<!--Nav-->
+  <nav id="topNav">
+		<div class="container">
+			<div class="row">
+				<button data-act="openTopNav"><i class="fas fa-bars" aria-hidden="true"></i></button>
+				<ul>
+					<li>
+						<a href="./about.html">О клинике</a>
+					</li>
+					<li>
+						<a href="./services.html">Услуги</a>
+						<button data-act="openInnerTopNav"><i class="fas fa-chevron-right"></i></button>
+						<ul>
+							<li>
+								<a href="./servicesSection.html"><i class="fas fa-arrow-right"></i>Диагностика</a>
+								<button data-act="openInnerTopNav"><i class="fas fa-chevron-right"></i></button>
+								<ul>
+									<li>
+										<a href="./servicesElement.html"><i class="fas fa-arrow-right"></i>Турбо диагностика</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="./servicesSection.html">Лечение</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="./prices.html">Цены</a>
+					</li>
+					<li>
+						<a href="./stock.html">Акции</a>
+					</li>
+					<li>
+						<a href="./works.html">Наши работы</a>
+					</li>
+					<li>
+						<a href="./specialists.html">Врачи</a>
+					</li>
+					<li>
+						<a href="./blog.html">Статьи</a>
+					</li>
+					<li>
+						<a href="./reviews.html">Отзывы</a>
+					</li>
+					<li>
+						<a href="./contacts.html">Контакты</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--/Nav-->
+	<!--Main-->
+	<main id="main">
+		<!--Main inner section-->
+		<section class="m-innerSection">
+			<div class="container">
+				<div class="row">
+					<!--Aside menu-->
+					<aside id="subNav" class="col-12 col-lg-4">
+						<h2>Наши услуги</h2>
+						<ul>
+							<li>
+								<a href="./servicesSection.html">Лечение зубов</a>
+								<ul>
+									<li>
+										<a href="./servicesElement.html">Лечение кариеса</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="./servicesSection.html">Протезирование зубов</a>
+							</li>
+						</ul>
+					</aside>
+					<!--/Aside menu-->
+					<!--Main content-->
+					<div class="col-12 col-lg-8"></div>
+					<!--/Main content-->
+				</div>
+			</div>
+		</section>
+		<!--/Main inner section-->
+	</main>
+	<!--/Main-->
+	<!--Footer-->
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-4">
+					<a href="./">
+						<img src="./assets/img/logoFooter.png" alt="logo">
+					</a>
+					<span class="m-licence"><small>Лицензия на осуществление медицинской деятельности ЛО-77-01-015671</small></span>
+				</div>
+				<div class="col-12 col-lg-4"></div>
+				<div class="col-12 col-lg-4">
+					<span><b>г. Москва, метро Октябрьское Поле</b></span>
+					<span>Маршала Вершинина, 8 к.1</span>
+					<a class="m-phoneLink" href="tel:+74951502818">+7 (495) 150 28 18</a>
+					<span>Ежедневно: 10:00-21:00</span>
+					<a href="https://a1-reklama.ru" target="_blank">
+						<img class="m-devLogo" src="./assets/img/logoa1.png" alt="Developer">
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<span class="m-offer"><small>Информация на данном сайте носит исключительно информационный характер, информационные материалы и цены, размещенные на сайте не являются публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса РФ</small></span>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--/Footer-->
+	<!--Additional blocks-->
+	<!--To top button-->
+	<div id="toTop">
+		<i class="fas fa-angle-double-up"></i>
+	</div>
+	<!--/To top button-->
+	<!--Popup form-->
+	<div id="popupForm">
+		<form action="./" method="post">
+			<button data-act="closePopup">Закрыть</button>
+			<img src="./assets/img/logoMini.png" alt="logo">
+			<legend>Мы перезвоним Вам</legend>
+			<p>С удовольствием ответим на Ваши вопросы!</p>
+			<div class="m-formBlock">
+				<input type="tel">
+				<button type="submit">Отправить</button>
+			</div>
+		</form>
+	</div>
+	<!--/Popup form-->
+	<!--Gallery-->
+	<div id="gallery">
+		<button data-act="closeGallery"><i class="fas fa-times"></i></button>
+		<img>
+		<div class="m-galleryControls">
+			<button data-act="prevPic"><i class="fas fa-chevron-left"></i></button>
+			<button data-act="nextPic"><i class="fas fa-chevron-right"></i></button>
+		</div>
+	</div>
+	<!--/Gallery-->
+	<!--/Additional blocks-->
+</body>
+</html>
