@@ -30,7 +30,7 @@ h1 {
 h2 {
 	font-size: 33px;
 	line-height: 36px;
-	margin-bottom: 15px;
+	margin: 15px 0;
 }
 p {
 	margin-bottom: 15px;
@@ -67,6 +67,28 @@ img {
 small {
 	font-size: 12px;
 }
+table {
+	width: 100%;
+	text-align: left;
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+tr {
+	border: 1px solid var(--bgBorderColor);
+}
+th, td {
+	padding: 15px;
+}
+th {
+	background: var(--mainColor);
+	color: var(--subTextColor);
+}
+th:first-of-type {
+	width: 70%;
+}
+td:first-of-type {
+	width: 70%;
+}
 
 /*Layouts*/
 #header {
@@ -79,7 +101,9 @@ small {
 }
 #topNav {
 	background: var(--mainColor);
-	position: relative;
+	position: sticky;
+	top: 0;
+	z-index: 9;
 }
 #topNav button[data-act='openTopNav'] {
 	position: absolute;
@@ -126,6 +150,18 @@ small {
 #topNav li:hover > a > i {
 	display: inline;
 }
+#topNav li > div > a > i {
+	display: none;
+	margin-right: 5px;
+	font-size: small;
+}
+#topNav li:hover > div > a > i {
+	display: inline;
+}
+#topNav li > div {
+	display: flex;
+	justify-content: space-between;
+}
 #topNav li > ul {
 	position: absolute;
 	top: 100%;
@@ -142,7 +178,7 @@ small {
 	color: var(--subTextColor);
 	white-space: nowrap;
 }
-#topNav a ~ ul {
+#topNav div ~ ul {
 	display: none;
 }
 #topNav li:hover > ul {
@@ -153,7 +189,7 @@ small {
 }
 #subNav h2 {
 	font-size: 20px;
-	margin-bottom: 20px;
+	margin: 0 0 20px;
 	position: relative;
 }
 #subNav h2::before {
@@ -173,6 +209,37 @@ small {
 	bottom: -10px;
 	position: absolute;
 	right: 0;
+}
+#subNav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+#subNav ul > li {
+	background: var(--subColor);
+	padding: 10px 20px;
+}
+#subNav ul > li > div {
+	display: flex;
+	justify-content: space-between;
+}
+#subNav ul > li > ul {
+	display: none;
+}
+#subNav ul > li > ul > li {
+	background: var(--subColorHover);
+}
+#subNav ul > li > ul > li:first-of-type {
+	margin-top: 20px;
+}
+#subNav button[data-act='openSubNav'] {
+	padding: 0;
+	box-shadow: none;
+	background: none;
+}
+#subNav a {
+	color: var(--subTextColor);
 }
 #footer {
 	padding: 30px 0;
@@ -282,6 +349,12 @@ small {
 }
 .m-callbackButton {
 	margin-left: auto;
+}
+.m-crumbs {
+	margin: 10px 0;
+}
+.m-crumbs span {
+	margin-right: 5px;
 }
 .m-mainBanner {
 	background: url(../img/banner.jpg) no-repeat center center;
@@ -455,6 +528,85 @@ small {
 	display: flex;
 	justify-content: space-between;
 }
+.m-oldPrice {
+	color: var(--bgBorderColor);
+	text-decoration: line-through;
+}
+.m-newPrice {
+	color: var(--thirdColor);
+}
+.m-stock div {
+	margin-bottom: 40px;
+}
+.m-stock img {
+	height: 160px;
+	display: block;
+	margin: auto;
+}
+.m-stock h3 {
+	font-size: 22px;
+	margin: 20px 0;
+}
+.m-stock span {
+	font-size: 24px;
+	margin-right: 10px;
+}
+.m-ourWorks {
+	background: none;
+}
+.m-ourWorks a {
+	height: 250px;
+}
+.m-specialist {
+	margin-bottom: 30px;
+}
+.m-specialist span {
+	color: var(--mainColor);
+}
+.m-specialist h2 {
+	margin: 0 0 30px;
+	position: relative;
+}
+.m-specialist h2::before {
+	content: '';
+	width: 30px;
+	height: 2px;
+	border-bottom: 2px;
+	bottom: -10px;
+	position: absolute;
+	background: #0991cb;
+}
+.m-specialist h2::after {
+	content: '';
+	width: calc(100% - 35px);
+	height: 2px;
+	border-bottom: 2px solid rgba(0,0,0,.07);
+	bottom: -10px;
+	position: absolute;
+	right: 0;
+}
+.m-specialist p {
+	font-size: 22px;
+}
+.m-blog div {
+	margin-bottom: 30px;
+}
+.m-blog h2 {
+	margin-top: 0;
+}
+.m-reviews div {
+	margin-bottom: 30px;
+}
+.m-reviews h3 {
+	font-size: 20px;
+	font-weight: bold;
+	color: var(--subColor);
+	margin-bottom: 15px;
+}
+.m-reviews span {
+	color: var(--bgBorderColor);
+	margin-left: 20px;
+}
 
 /*Js*/
 .js-topNavShown ul {
@@ -464,6 +616,9 @@ small {
 	top: -35px !important;
 }
 .js-innerTopNavShown ~ ul {
+	display: block !important;
+}
+.js-subNavShown ~ ul {
 	display: block !important;
 }
 .js-popupShown {
@@ -477,6 +632,9 @@ small {
 
 /*Media queries*/
 @media (max-width: 992px) {
+	#topNav {
+		position: relative;
+	}
 	#topNav ul {
 		flex-direction: column;
 		overflow: hidden;
@@ -505,6 +663,12 @@ small {
 @media (max-width: 768px) {
 	h1, h2, h3, p, li, span {
 		word-break: break-word;
+	}
+	th:first-of-type {
+		width: 50%;
+	}
+	td:first-of-type {
+		width: 50%;
 	}
 	.m-mainBanner .row {
 		height: auto;
